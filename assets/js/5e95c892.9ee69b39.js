@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkneuronpedia_docs=self.webpackChunkneuronpedia_docs||[]).push([[647],{7121:(e,s,r)=>{r.r(s),r.d(s,{default:()=>p});r(6540);var n=r(4164),u=r(1003),a=r(7559),c=r(2831),d=r(781),o=r(4848);function p(e){return(0,o.jsx)(u.e3,{className:(0,n.A)(a.G.wrapper.docsPages),children:(0,o.jsx)(d.A,{children:(0,c.v)(e.route.routes)})})}}}]);
