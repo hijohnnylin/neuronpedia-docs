@@ -9,19 +9,32 @@ slug: /features
 
 Sparse Autoencoders identify many **features** in a model, each of which is a "thing that the model knows". A **feature dashboard** on Neuronpedia is an informative and interactive way to examine a feature. It shows us details about specific feature, including statistics, positive and negative logits, and correlated neurons, and top activations. We can also explain add the feature to lists, comment on the feature, and instantly test the feature's activations on custom text.
 
-Each individual feature is located at:
+A feature's ID is `[MODEL_ID]@[SAE_ID]:[FEATURE_INDEX]`.
+
+Each individual feature is located at URL:
 `https://neuronpedia.org/[MODEL_ID]/[SAE_ID]/[FEATURE_INDEX]`
+
+For this page, we'll use an example feature in `GPT2-Small`, layer 6, for the SAE Set `RES_SCEFR-AJT`, at index 650. Its URL is:
+[`https://neuronpedia.org/gpt2-small/6-res_scefr-ajt/650`](https://neuronpedia.org/gpt2-small/6-res_scefr-ajt/650)
 
 ### Example - Feature Page
 
-Here's an [example feature](https://neuronpedia.org/gpt2-small/6-res_scefr-ajt/650) in `GPT2-Small`. There are many things on this page - we'll explain some of them below.
+The feature page shows lots of data and can seem a little overwhelming at first. We'll break it down below:
 
 ![Screenshot of a feature dashboard at https://www.neuronpedia.org/gpt2-small/6-res_scefr-ajt/650](img/feature-dashboard.png)
 
-### Example - URL
+When you share a link to a feature such as the one above into places like Slack or Twitter, a preview image is automatically generated and displayed alongside the feature's ID. The following shows the preview for the example feature, pasted into Slack:
+![Screenshot of the OpenGraph image preview for https://www.neuronpedia.org/gpt2-small/6-res_scefr-ajt/650](img/feature-slack.png)
 
-This feature is for `GPT2-Small`, in layer 6, in the SAE Set `RES_SCEFR-AJT`, at index 650. So its URL is:
-[`https://neuronpedia.org/gpt2-small/6-res_scefr-ajt/650`](https://neuronpedia.org/gpt2-small/6-res_scefr-ajt/650)
+### Example - JSON API
+
+It's simple to get the JSON version of the data above. Just add `/api/feature/` right after the `https://neuronpedia.org` in the URL.
+
+Example Feature: [`https://www.neuronpedia.org/gpt2-small/6-res_scefr-ajt/650`](https://www.neuronpedia.org/gpt2-small/6-res_scefr-ajt/650)
+
+JSON: [`https://www.neuronpedia.org/api/feature/gpt2-small/6-res_scefr-ajt/650`](https://www.neuronpedia.org/api/feature/gpt2-small/6-res_scefr-ajt/650)
+
+They're GET requests, so you can use it in your browser. You can use our [API sandbox](https://neuronpedia.org/api-doc) to try it.
 
 ### Example - Dashboard
 
@@ -44,6 +57,6 @@ Every feature on Neuronpedia can be tested live with custom text, to experiment 
 
 ![Screenshot of a feature test at https://www.neuronpedia.org/gpt2-small/6-res_scefr-ajt/650](img/feature-test.png)
 
-### Example - Lists, Comments, Stars
+### Example - Lists & More
 
 Features can be added to lists, which themselves can have descriptions. Every feature has a comment section for discussion, and features can also be "starred" (bookmarked) for personal reference later on.

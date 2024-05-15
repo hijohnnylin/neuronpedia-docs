@@ -23,3 +23,11 @@
   --ifm-background-surface-color: #121212;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.videoButton_node_modules-react-tweet-dist-twitter-theme-tweet-media-video-module {
+  border: solid 4px #aaaaaa !important;
+}
+
+.videoButtonIcon_node_modules-react-tweet-dist-twitter-theme-tweet-media-video-module {
+  color: #aaaaaa !important;
+}

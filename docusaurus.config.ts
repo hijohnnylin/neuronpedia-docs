@@ -67,6 +67,9 @@ const config: Config = {
         },
       ],
     },
+    sidebar: {
+      hideable: true,
+    },
     hide_table_of_contents: true,
     footer: {},
     prism: {
