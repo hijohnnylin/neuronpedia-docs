@@ -8,7 +8,7 @@ sidebar_position: 1
 
 Sparse Autoencoders (SAEs) are a way to extract interpretable features from models. [Here is an explainer on SAEs](https://transformer-circuits.pub/2023/monosemantic-features).
 
-Every Sparse Autoencoder on Neuronpedia has a unique identifier in the format of `MODEL`@`LAYER`-`DESCRIPTION`-`AUTHOR`.
+Every Sparse Autoencoder has a unique identifier in the format of `MODEL`@`LAYER`-`DESCRIPTION`-`AUTHOR`.
 
 ### Example
 
