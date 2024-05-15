@@ -62,7 +62,7 @@ const config: Config = {
         },
         {
           href: "https://neuronpedia.org/api-doc",
-          label: "API",
+          label: "API (WIP)",
           position: "right",
         },
       ],
