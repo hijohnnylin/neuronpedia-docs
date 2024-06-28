@@ -8,8 +8,8 @@ Neuronpedia supports steering the output of models by increasing or decreasing t
 
 You can think of this as Anthropic's "Golden Gate Claude" demonstration, except that you can use any feature, not just features about the Golden Gate Bridge.
 
-Currently, only `Gemma-2B` is supported, but we're adding more support soon:
-[`https://www.neuronpedia.org/steer/gemma-2b/res-jb`](https://www.neuronpedia.org/steer/gemma-2b/res-jb)
+Currently, `Gemma-2B`, `Gemma-2B-IT` and `GPT2-Small` are supported, and we're adding more support soon:
+[`https://www.neuronpedia.org/steer`](https://www.neuronpedia.org/steer)
 
 The API is documented at our [API Docs](http://localhost:3000/api-doc).
 
@@ -26,7 +26,7 @@ PROMPT = "The most iconic structure on Earth is"
 MODEL_ID = "gemma-2b"
 
 # feature about San Francisco
-FEATURE = {"modelId": "gemma-2b", "layer": "6-res-jb", "index": 10200, "strength": 30}
+FEATURE = {"modelId": "gemma-2b", "layer": "6-res-jb", "index": 10200, "strength": 5}
 
 # other settings
 TEMPERATURE = 0.2
