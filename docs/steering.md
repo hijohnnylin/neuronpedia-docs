@@ -11,7 +11,7 @@ You can think of this as Anthropic's "Golden Gate Claude" demonstration, except 
 Currently, `Gemma-2B`, `Gemma-2B-IT` and `GPT2-Small` are supported, and we're adding more support soon:
 [`https://www.neuronpedia.org/steer`](https://www.neuronpedia.org/steer)
 
-The API is documented at our [API Docs](http://localhost:3000/api-doc).
+The API is documented at our [API Docs](https://neuronpedia.org/api-doc).
 
 There is an hourly rate limit of 100 steers per user.
 
