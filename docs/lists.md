@@ -54,7 +54,9 @@ The resulting quick list [is here](https://www.neuronpedia.org/quick-list?name=h
 Embed lists by appending `?embed=true` to the list link.
 
 For example, here's a list of Twitter-related features, embedded.
+
 Embedded List URL: `https://neuronpedia.org/list/clual45u70003m9z5163dyh98?embed=true`
+
 Embed Code: `<iframe src="https://neuronpedia.org/list/clual45u70003m9z5163dyh98?embed=true" title="Neuronpedia" style="height: 650px; width: 700px;"></iframe>`
 
 And here's what the embed looks like:
