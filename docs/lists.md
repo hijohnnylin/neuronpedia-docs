@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Lists
+# Lists & Embed Lists
 
 Lists let you save features and link to them in one page. They're commonly used to highlight similar features, but they can be used for any purpose.
 
@@ -48,3 +48,15 @@ webbrowser.open(url)
 ```
 
 The resulting quick list [is here](https://www.neuronpedia.org/quick-list?name=hello%2C%20this%20is%20a%20quick%20list!%20all%20the%20necessary%20data%20is%20in%20the%20URL&features=%5B%7B%22modelId%22%3A%20%22gpt2-small%22%2C%20%22layer%22%3A%20%226-res-jb%22%2C%20%22index%22%3A%20%222320%22%7D%2C%20%7B%22modelId%22%3A%20%22gpt2-small%22%2C%20%22layer%22%3A%20%223-res-jb%22%2C%20%22index%22%3A%20%221029%22%7D%5D).
+
+### Embed Lists (iframe)
+
+Embed lists by appending `?embed=true` to the list link.
+
+For example, here's a list of Twitter-related features, embedded.
+Embedded List URL: `https://neuronpedia.org/list/clual45u70003m9z5163dyh98?embed=true`
+Embed Code: `<iframe src="https://neuronpedia.org/list/clual45u70003m9z5163dyh98?embed=true" title="Neuronpedia" style="height: 650px; width: 700px;"></iframe>`
+
+And here's what the embed looks like:
+
+<iframe src="https://neuronpedia.org/list/clual45u70003m9z5163dyh98?embed=true" title="Neuronpedia" style={{border: "1px solid #ddd", borderRadius: "10px", width:"700px", height:"650px"}}></iframe>
