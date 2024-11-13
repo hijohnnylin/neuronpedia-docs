@@ -28,11 +28,6 @@ And here's what the embed looks like:
 
 <iframe src="https://neuronpedia.org/gpt2-small/0-res-jb/14057?embed=true" title="Neuronpedia" style={{border: "1px solid #ddd", borderRadius: "10px", width:"540px", height:"300px"}}></iframe>
 
-## LessWrong Example
-
-If you're posting on LessWrong, the editor supports embedding Neuronpedia features directly. Just copy paste the embed link (not the iframe code) into the editor.
-You can also modify the `height=300` query parameter and LessWrong will use that as the embedding height.
-
 ## Customizations
 
 ### Width and Height
@@ -79,3 +74,18 @@ Here's the example above, without explanation:
 `<iframe src="https://neuronpedia.org/gpt2-small/0-res-jb/14057?embed=true&embedexplanation=false&embedplots=true" title="Neuronpedia" style={{border: "1px solid #ddd", borderRadius: "10px", width:"480px", height:"300px"}}></iframe>`
 
 <iframe src="https://neuronpedia.org/gpt2-small/0-res-jb/14057?embed=true&embedexplanation=false&embedplots=true" title="Neuronpedia" style={{border: "1px solid #ddd", borderRadius: "10px", width:"480px", height:"300px"}}></iframe>
+
+### Default Activation Text
+
+You can add a default, custom activation text to the embed. Add the query parameter `defaulttesttext` with the URI-encoded string of what you want in the activation field. For example:
+
+`<iframe src="https://neuronpedia.org/gpt2-small/0-res-jb/14057?embed=true&embedexplanation=true&embedplots=true&defaulttesttext=my+custom+Jedi" title="Neuronpedia" style={{border: "1px solid #ddd", borderRadius: "10px", width:"480px", height:"360px"}}></iframe>`
+<iframe src="https://neuronpedia.org/gpt2-small/0-res-jb/14057?embed=true&embedexplanation=true&embedplots=true&defaulttesttext=my+custom+Jedi" title="Neuronpedia" style={{border: "1px solid #ddd", borderRadius: "10px", width:"480px", height:"360px"}}></iframe>
+
+## LessWrong Example
+
+LessWrong supports embedding Neuronpedia features directly in the editor. Just copy paste the embed link (not the iframe code) into the editor, or simply copy-paste the URL directly into the LessWrong editor. If you copy the embed link, be sure that ?embed=true is the first query parameter.
+Some example links you can directly copy into the editor:
+- `https://neuronpedia.org/gpt2-small/0-res-jb/14057?embed=true&embedexplanation=false&embedplots=true&defaulttesttext=the+Jedi`
+- `https://neuronpedia.org/gpt2-small/0-res-jb/14057?embed=true&embedexplanation=false`
+- `https://neuronpedia.org/gpt2-small/0-res-jb/14057`
