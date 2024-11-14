@@ -84,8 +84,8 @@ You can add a default, custom activation text to the embed. Add the query parame
 
 ## LessWrong Example
 
-LessWrong supports embedding Neuronpedia features directly in the editor. Just copy paste the embed link (not the iframe code) into the editor, or simply copy-paste the URL directly into the LessWrong editor. If you copy the embed link, be sure that ?embed=true is the first query parameter.
-Some example links you can directly copy into the editor:
+LessWrong supports embedding Neuronpedia features directly in the editor. Just copy paste the embed link (not the iframe code) into the editor. Note that the previews will only show up correctly if you copy-paste, not manually type out the url.
+
+Some example links you can directly paste into the editor:
 - `https://neuronpedia.org/gpt2-small/0-res-jb/14057?embed=true&embedexplanation=false&embedplots=true&defaulttesttext=the+Jedi`
 - `https://neuronpedia.org/gpt2-small/0-res-jb/14057?embed=true&embedexplanation=false`
-- `https://neuronpedia.org/gpt2-small/0-res-jb/14057`
