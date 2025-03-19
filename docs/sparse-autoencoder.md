@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Sparse Autoencoder
 
+> ⚠️ **Warning:** These docs are in the process of being updated - the latest significant revision was September 2024. Neuronpedia has expanded beyond SAE-specific research to include probes, "concepts", transcoders, and more. Additionally, Neuronpedia has many more functionalities than documented here.
+
 ### Sparse Autoencoder Basics
 
 Sparse Autoencoders (SAEs) are a way to extract interpretable features from models. [Here is an explainer on SAEs](https://transformer-circuits.pub/2023/monosemantic-features).

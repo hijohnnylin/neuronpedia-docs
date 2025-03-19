@@ -8,11 +8,15 @@ import { TweetNoHeader } from "../src/components/TweetNoHeader.tsx";
 
 # Introduction
 
+> ⚠️ **Warning:** These docs are in the process of being updated - the latest significant revision was September 2024. Neuronpedia has expanded beyond SAE-specific research to include probes, "concepts", transcoders, and more. Additionally, Neuronpedia has many more functionalities than documented here.
+
+![Neuronpedia Logo](https://private-user-images.githubusercontent.com/1042066/418222108-9bcea0bf-4fa9-401d-bb7a-d031a4d12636.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIzMzY2ODIsIm5iZiI6MTc0MjMzNjM4MiwicGF0aCI6Ii8xMDQyMDY2LzQxODIyMjEwOC05YmNlYTBiZi00ZmE5LTQwMWQtYmI3YS1kMDMxYTRkMTI2MzYuZ2lmP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDMxOCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTAzMThUMjIxOTQyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NGY5MjY0MTNmODk3NzA4NTEzN2I1NTcxZTFhYWUyYmEyZGU5MjExNTQxM2VhNDUzZjk4YTM2YmYyOWNiNjUwMCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.tYKEnVdrqBM_JfTyRFOHMix1HcqkbZ4P1j3OAU6sMWQ)
+
 ### What is Neuronpedia?
 
-[Neuronpedia](https://neuronpedia.org) is a platform for mechanistic interpretability research. Its goal is to accelerate researchers for **Sparse Autoencoders (SAEs)** by hosting models, feature dashboards, data visualizations, tooling, and more.
+[Neuronpedia](https://neuronpedia.org) is an open platform for mechanistic interpretability research. It's both a public database of useful data for researchers (including activations, explanations, and metadata, and more), as well as a suite of free APIs/tools that accelerate white-box understanding and experimentation of neural networks.
 
-![Diagram showing a cycle from SAEs -> Neuronpedia -> Researchers and back to SAEs](img/cycle-diagram.webp)
+![Diagram showing feature overview of Neuronpedia.](/img/neuronpedia-features.png)
 
 These docs explain Neuronpedia's features and how to use them. Please [email us](mailto:johnny@neuronpedia.org) if you have further questions or comments. We love feedback!
 
@@ -20,9 +24,13 @@ These docs explain Neuronpedia's features and how to use them. Please [email us]
 
 TL;DR - Researchers do research. We accelerate them by doing everything else: visualizations, tooling, sharing/collaboration, scaling, and hosting.
 
-### Launch Tweets (Short)
+### Research Focus
 
-Here's our launch tweet thread with demo GIFs and details on what Neuronpedia does:
+Neuronpedia was previously focused specifically on SAE (Sparse Autoencoder) research. However, the infrastructure is now generalized to support all mech interp research, including but not limited to probes, "concepts", transcoders, and more.
+
+### Demo Tweets (Short)
+
+Here's our launch tweet thread with GIFs showcasing Neuronpedia. It's a bit outdated now, but it's still a fun and relevant demo:
 
 <Tweet
   id="1773403396130885844"
@@ -36,30 +44,5 @@ Here's our launch tweet thread with demo GIFs and details on what Neuronpedia do
   id="1773403398928503024"
   apiUrl={"https://www.neuronpedia.org/api/doc-tweets/1773403398928503024"}
 />
-
-### Detailed Answer & Post
-
-While SAEs are exciting, they introduce a number of engineering challenges which can slow or even prevent research from being done. These challenges arise because SAEs decompose neural networks into distinct features which we are trying to understand.
-
-Neuronpedia solves these problems by providing:
-
-- **Automatic Frontend for SAEs that Scales**: Researchers are busy enough doing research. They
-  shouldn&#39;t have to scramble together a frontend to make
-  their work presentable/usable before publishing their
-  paper. Neuronpedia wants to make publishing your
-  interpretability research as easy as clicking {`Upload`}.
-
-- **One Central, Standardized, Searchable Database**: Interpretability researchers have usually created their
-  own custom websites to upload and display their data. For
-  example, OpenAI&#39;s Neuron Viewer and Neel Nanda&#39;s
-  Neuroscope have similar types of data, but totally
-  different interfaces, APIs, and data structures.
-  Neuronpedia is the free and open website where all the
-  interpretability data can be uploaded, searched, compared,
-  linked to, exported, tested, etc.
-
-- **Crowdsourcing and Peer Testing**:
-  Neuronpedia is used by (and created by!) people who are
-  fascinated by AI interpretability. Neuronpedia's tools allow anyone to contribute to explaining, verifying, and analyzing your data. Someone might even find interesting things in your data that you didn't notice! (And vice versa.)
 
 For even more detail and background, check out our launch post on [LessWrong](https://www.lesswrong.com/posts/BaEQoxHhWPrkinmxd/announcing-neuronpedia-as-a-platform-to-accelerate-research).
