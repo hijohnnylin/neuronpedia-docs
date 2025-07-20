@@ -12,8 +12,11 @@ Neuronpedia has a public API to access all of its data, including features, expl
 
 ## Exports
 
-For your convenience (and to avoid hammering our server), we have full data exports available for some SAEs here:
+For your convenience (and to avoid hammering our server), we have full data exports here:
+[https://neuronpedia-datasets.s3.us-east-1.amazonaws.com/index.html?prefix=v1/](https://neuronpedia-datasets.s3.us-east-1.amazonaws.com/index.html?prefix=v1/)
+
+### Older Exports
 
 [https://neuronpedia-exports.s3.amazonaws.com/index.html](https://neuronpedia-exports.s3.amazonaws.com/index.html)
 
-We are gradually exporting the other SAEs. Please let us know if you need a specific export by [emailing us](mailto:support@neuronpedia.org) - we're usually able to export the data to you within 48 hours.
+If you're finding something is still missing, please [email us](mailto:support@neuronpedia.org) - we're usually able to export the data to you within 48 hours.
