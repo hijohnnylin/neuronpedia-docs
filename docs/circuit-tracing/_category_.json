@@ -1,0 +1,5 @@
+{
+  "label": "Circuit Tracing",
+  "position": 5,
+  "link": { "type": "doc", "id": "circuit-tracing/overview" }
+}

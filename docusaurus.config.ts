@@ -47,6 +47,24 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        // Old URLs from before pages moved into sections. External sites link to these.
+        redirects: [
+          { from: "/sparse-autoencoder", to: "/sparse-autoencoders/overview" },
+          { from: "/features", to: "/sparse-autoencoders/feature-dashboards" },
+          { from: "/search", to: "/sparse-autoencoders/search" },
+          { from: "/lists", to: "/sparse-autoencoders/lists" },
+          { from: "/embed-iframe", to: "/sparse-autoencoders/embeds" },
+          { from: "/upload-saes", to: "/sparse-autoencoders/upload-saes" },
+          { from: "/api", to: "/api-and-data/api" },
+        ],
+      },
+    ],
+  ],
+
   themeConfig: {
     navbar: {
       title: "Neuronpedia Docs",
@@ -62,7 +80,17 @@ const config: Config = {
         },
         {
           href: "https://neuronpedia.org/api-doc",
-          label: "API (WIP)",
+          label: "API Reference",
+          position: "right",
+        },
+        {
+          href: "https://neuronpedia.org/blog",
+          label: "Blog",
+          position: "right",
+        },
+        {
+          href: "https://github.com/hijohnnylin/neuronpedia",
+          label: "GitHub",
           position: "right",
         },
       ],
