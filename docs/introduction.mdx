@@ -3,6 +3,7 @@ sidebar_position: 1
 slug: /
 ---
 
+import ErrorBoundary from "@docusaurus/ErrorBoundary";
 import { Tweet } from "../src/components/Tweet.tsx";
 import { TweetNoHeader } from "../src/components/TweetNoHeader.tsx";
 
@@ -32,17 +33,26 @@ Neuronpedia was previously focused specifically on SAE (Sparse Autoencoder) rese
 
 Here's our launch tweet thread with GIFs showcasing Neuronpedia. It's a bit outdated now, but it's still a fun and relevant demo:
 
-<Tweet
-  id="1773403396130885844"
-  apiUrl={`https://www.neuronpedia.org/api/doc-tweets/1773403396130885844`}
-/>
-<TweetNoHeader
-  id="1773403397489881423"
-  apiUrl={"https://www.neuronpedia.org/api/doc-tweets/1773403397489881423"}
-/>
-<TweetNoHeader
-  id="1773403398928503024"
-  apiUrl={"https://www.neuronpedia.org/api/doc-tweets/1773403398928503024"}
-/>
+<ErrorBoundary
+  fallback={() => (
+    <p>
+      The tweets did not load. See the{" "}
+      <a href="https://x.com/johnnylin/status/1773403396130885844">thread on X</a>.
+    </p>
+  )}
+>
+  <Tweet
+    id="1773403396130885844"
+    apiUrl={`https://www.neuronpedia.org/api/doc-tweets/1773403396130885844`}
+  />
+  <TweetNoHeader
+    id="1773403397489881423"
+    apiUrl={"https://www.neuronpedia.org/api/doc-tweets/1773403397489881423"}
+  />
+  <TweetNoHeader
+    id="1773403398928503024"
+    apiUrl={"https://www.neuronpedia.org/api/doc-tweets/1773403398928503024"}
+  />
+</ErrorBoundary>
 
 For even more detail and background, check out our launch post on [LessWrong](https://www.lesswrong.com/posts/BaEQoxHhWPrkinmxd/announcing-neuronpedia-as-a-platform-to-accelerate-research).
